@@ -108,7 +108,7 @@ public class ProjectActivity  extends AppCompatActivity{
 
         @Override
         public int getItemCount() {
-            return projects.size();
+            return projectList.size();
         }
     }
 
