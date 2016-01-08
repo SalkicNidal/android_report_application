@@ -37,7 +37,7 @@ public class WebConnect {
     public static List<String> reportEndTime = new ArrayList<>();
     public static List<Report> reports = new ArrayList<>();
 
-    private static String url;
+    private static String url = IPaddress.getIpAddress();
     private static Project currentProject;
     private static AppCompatActivity currentActivity;
 

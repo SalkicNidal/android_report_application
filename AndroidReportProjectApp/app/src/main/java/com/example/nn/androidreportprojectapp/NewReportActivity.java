@@ -16,7 +16,7 @@ import com.example.nn.androidreportprojectapp.models.Project;
  */
 public class NewReportActivity extends AppCompatActivity {
 
-    public static Project project;
+    public static Project mproject;
     private EditText context;
     private EditText startDate;
     private EditText endDate;
@@ -47,7 +47,7 @@ public class NewReportActivity extends AppCompatActivity {
 
     public static Intent newIntent(Context context, Project project) {
         Intent i = new Intent(context, NewReportActivity.class);
-        project = project;
+        mproject = project;
         return i;
     }
 

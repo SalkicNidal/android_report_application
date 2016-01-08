@@ -5,7 +5,7 @@ package com.example.nn.androidreportprojectapp.helper;
  */
 public class IPaddress {
 
-    private static String url = "http://192.168.1.2:9000/";
+    private static String url = "http://localhost:9000/";
 
     public static String getIpAddress() {
         return url;

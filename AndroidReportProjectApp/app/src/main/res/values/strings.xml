@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AndroidReportProjectApp</string>
     <string name="NewReport">New Report</string>
+    <string name="enter_site">enter_site</string>
+    <string name="enter">Enter</string>
+    <string name="welcome">Welcome</string>
+    <string name="Welcome">Welcome</string>
 </resources>

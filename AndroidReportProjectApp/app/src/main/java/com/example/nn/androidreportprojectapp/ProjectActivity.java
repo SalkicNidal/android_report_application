@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.nn.androidreportprojectapp.helper.IPaddress;
 import com.example.nn.androidreportprojectapp.helper.WebConnect;
 import com.example.nn.androidreportprojectapp.models.Project;
 
@@ -22,10 +23,11 @@ import java.util.List;
  */
 public class ProjectActivity  extends AppCompatActivity{
 
-    public static List<Project> projects;
+    public static List<Project> projects = WebConnect.projects;
     private ProjectView projectView;
     private ProjectAdapter projectAdapter;
     private RecyclerView recyclerView;
+    public static String url = IPaddress.getIpAddress();
 
 
     @Override
@@ -39,7 +41,7 @@ public class ProjectActivity  extends AppCompatActivity{
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    public static Intent newIntent(Context packageContext, List<Project> projectList){
+    public static Intent newIntent(Context packageContext, List<Project> projectList ){
 
         Intent i = new Intent(packageContext, ProjectActivity.class);
         projects = projectList;
